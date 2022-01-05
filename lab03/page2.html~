@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Web development"/>
+	<meta name="keywords" content="HTML (Part 1 - Content - Form)"/>
+	<meta name="author" content="Matthew Hulme"/>
+	<title>Web Development Survey</title>
+</head>
+
+
+<body>
+	<h1>Survey</h1>
+	<form
+		id="survey"
+		method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"
+	>
+
+	<p>Which browsers do you know how to use?</p>
+	<p><label for="browser">
+		Chrome <input type="checkbox" name="browser" value="Chrome">
+	</label></p>
+	<p><label for="browser">
+		Firefox <input type="checkbox" name="browser" value="Firefox">
+	</label></p>
+	<p><label for="browser">
+		Internet Explorer <input type="checkbox" name="browser" value="Internet Explorer">
+	</label></p>
+	<p><label for="browser">
+		Safari <input type="checkbox" name="browser" value="Safari">
+	</label></p>
+
+
+	<p>Which text editor do you know how to use?</p>
+	<p><label for="editor">
+		Notepad++ <input type="checkbox" name="editor" value="npp">
+	</label></p>
+	<p><label for="editor">
+		Atom <input type="checkbox" name="editor" value="atom">
+	</label></p>
+	<p><label for="editor">
+		Vim <input type="checkbox" name="editor" value="vim">
+	</label></p>
+	<p><label for="editor">
+		Sublime Text <input type="checkbox" name="editor" value="sublime">
+	</label></p>
+
+
+	<p><input type="submit" value="Submit"/><input type="reset" value="Reset"/></p>
+	</form>
+
+	<form id="prev" method="post" action="page1.html"><input type="submit" value="Previous"/></form>
+	<form id="next" method="post" action="page3.html"><input type="submit" value="Next"/></form>
+</body>
+
+
+</html>

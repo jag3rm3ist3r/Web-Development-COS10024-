@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Web development"/>
+	<meta name="keywords" content="HTML (Part 1 - Content - Form)"/>
+	<meta name="author" content="Matthew Hulme"/>
+	<title>Web Development Survey</title>
+</head>
+
+
+<body>
+	<h1>Survey</h1>
+	<form
+		id="survey"
+		method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"
+	>
+
+	<p>How do you rate the lecture materials?</p>
+	<p><label for="Excellent">
+		Excellent <input type="radio" name="lecture" value="excellent">
+	</label></p>
+	<p><label for="Good">
+		Good <input type="radio" name="lecture" value="good">
+	</label></p>
+	<p><label for="Fair">
+		Fair <input type="radio" name="lecture" value="fair">
+	</label></p>
+	<p><label for="Poor">
+		Poor <input type="radio" name="lecture" value="poor">
+	</label></p>
+
+
+	<p>How do you rate the lab materials?</p>
+	<p><label for="Excellent">
+		Excellent <input type="radio" name="lab" value="excellent">
+	</label></p>
+	<p><label for="Good">
+		Good <input type="radio" name="lab" value="good">
+	</label></p>
+	<p><label for="Fair">
+		Fair <input type="radio" name="lab" value="fair">
+	</label></p>
+	<p><label for="Poor">
+		Poor <input type="radio" name="lab" value="poor">
+	</label></p>
+
+	<p><input type="submit" value="Submit"/><input type="reset" value="Reset"/></p>
+	</form>
+
+	<form id="prev" method="post" action="page2.html"><input type="submit" value="Previous"/></form>
+	<form id="next" method="post" action="page4.html"><input type="submit" value="Next"/></form>
+</body>
+
+
+</html>

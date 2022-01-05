@@ -1,0 +1,114 @@
+/* COS10024 Assignment 1 Stylesheet (mobile) */
+
+
+/* Default font for the site */
+* {
+	font-family: "Source Code Pro", monospace;
+	/*font-size: 0.95em;*/
+}
+
+
+h1 {
+	text-align: center;
+}
+
+
+/* Positioning constraints */
+.left {
+	/*float: left;
+	width: 49%;*/
+	width: 100%;
+}
+
+.right {
+	/*float: right;
+	width: 49%;*/
+	width: 100%;
+}
+
+
+/* Table properties */
+#aboutpagetimetable {
+	border-collapse: collapse;
+	border: solid 1px black;
+	font-size: 0.9em;
+}
+
+#aboutpagetimetable td {
+	text-align: center;
+}
+
+#aboutpagetimetable th {
+	background-color: lightgrey;
+	text-align: center;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+#aboutpagetimetable td.busy {
+	background-color: orange;
+}
+
+
+/* Definition list properties */
+dt {
+	font-weight: bold;
+}
+
+/* Menu properties */
+nav {
+	background-color: lightgrey;
+	width: 100%;
+	/*display: flex;
+	align-items: stretch;
+	justify-content: space-between;*/
+}
+
+nav a:link {
+	color: black;
+}
+
+nav a:visited {
+	color: black;
+}
+
+nav a {
+	transition: background-color 1s ease;
+	background-color: lightgrey;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 0.2em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 0.2em;
+	display: block;
+}
+
+nav a:hover {
+	background-color: white;
+}
+
+
+/* CSS Animations */
+@keyframes anim1 {
+	0%		{background-color: red;}
+	33%		{background-color: green;}
+	67%		{background-color: blue;}
+	100%	{background-color: red;}
+}
+#anim1 {
+	background-color: red;
+	animation-name: anim1;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+/* about.html image fade in. */
+@keyframes anim2 {
+	0%		{opacity: 0%;}
+	100%	{opacity: 100%;}
+}
+#fademe {
+	animation-name: anim2;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Demonstrates some HTML and CSS" />
+	<meta name="author" content="Matthew Hulme"  />
+	<title>COS10024 Assignment 1</title>
+
+	<!-- Stylesheet (This is only tested on my iPhone X) -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<link href="styles/style.css" rel="stylesheet" type="text/css" media="screen and (min-device-width:641px)"/>
+	<link href="styles/mobilestyle.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 640px)"/>
+
+
+	<!-- Adding a font to the site -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!--
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	-->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<header>
+		<h1>COS10024 Assignment 1<br/>
+		103112063 Matthew Hulme</h1>
+		<hr/>
+		<nav>
+			<a href="index.html">University</a>
+			<a href="hometown.html">Hometown</a>
+			<a href="about.html"><strong>About me</strong></a>
+			<a href="animations.html">Animations</a>
+			<!--
+			<a href=""></a>
+			-->
+		</nav>
+		<hr/>
+	</header>
+
+
+	<main>
+		<div class="left">
+		<h3>About me</h3>
+			<dl>
+				<dt>Name</dt>
+				<dd>Matthew Hulme</dd>
+				<dt>Student Number</dt>
+				<dd>103112063</dd>
+				<dt>Tutor's Name</dt>
+				<dd>Dr. Gamunu Dassanayake</dd>
+				<dt>Course</dt>
+				<dd>COS10024 Web Development</dd>
+				<!--
+				<dt></dt>
+				<dd></dd>
+				-->
+			</dl>
+		</div>
+		<div class="right">
+			<!-- !!! MODIFY PHOTO TO BE < 100K LATER !!! -->
+			<figure>
+				<img src="images/IMG_9091.JPG" alt="alt: Photo of me" style="width:100%" id="fademe">
+				<figcaption>Above: Photo of me</figcaption>
+			</figure>
+		</div>
+
+		<br/>
+
+		<!--
+			 This inline style is used to keep the table from widening the page
+			+on mobile and to keep the table below the image and not tucked
+			+behind it.
+		-->
+		<div style="overflow-x: auto; clear: both;">
+			<table id="aboutpagetimetable">
+				<tr>
+					<th></th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+				</tr>
+				<tr>
+					<th>1030</th>
+					<td></td>
+					<td></td>
+					<td class="busy">COS10023 Lec 1</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1130</th>
+					<td class="busy">COS10023 Lab 1</td>
+					<td class="busy">INF20015 Lec 1</td>
+					<td class="busy"></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1230</th>
+					<td class="busy"></td>
+					<td class="busy"></td>
+					<td class="busy">COS10024 Lab 2</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1330</th>
+					<td></td>
+					<td class="busy">COS10024 Lab 1</td>
+					<td class="busy"></td>
+					<td class="busy">INF20015 Lab 1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1430</th>
+					<td></td>
+					<td class="busy"></td>
+					<td></td>
+					<td class="busy"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1530</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1630</th>
+					<td class="busy">COS10024 Lec 1</td>
+					<td class="busy">INF20015 Lab 2</td>
+					<td></td>
+					<td class="busy">COS10023 Lab 2</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>1730</th>
+					<td class="busy"></td>
+					<td class="busy"></td>
+					<td></td>
+					<td class="busy"></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+		<br/>
+
+		<dl>
+			<dt>Favourite bands</dt>
+			<dd><a href="https://www.metal-archives.com/bands/ingested/53619">Ingested</a></dd>
+			<dd><a href="https://www.metal-archives.com/bands/Bloodbath/233">Bloodbath</a></dd>
+			<dd><a href="https://www.metal-archives.com/bands/Organectomy/3540327257">Organectomy</a></dd>
+			<dd><a href="https://www.metal-archives.com/bands/Aborted/213">Aborted</a></dd>
+		</dl>
+		<br/>
+		email: <a href="mailto:103112063@student.swin.edu.au">103112063@student.swin.edu.au</a>
+		<br/>
+	</main>
+
+
+	<footer>
+		<br/>
+		<hr/>
+		<br/>
+		<em>Created for COS10024 Assignment 1 by Matthew Hulme in 2020.</em>
+	</footer>
+</body>

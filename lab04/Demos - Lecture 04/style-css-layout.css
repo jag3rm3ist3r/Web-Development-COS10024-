@@ -1,0 +1,17 @@
+header, nav {
+  border-style : dotted;
+}
+article {
+  float        : left;
+  width        : 75%;
+  border-style : dotted;
+}
+aside{
+  float        : right;
+  width        : 20%;
+  border-style : dotted;
+}
+footer {
+  clear        : both;
+  border-style : dotted;
+}

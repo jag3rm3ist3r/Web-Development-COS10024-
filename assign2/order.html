@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Demonstrates some HTML and CSS" />
+	<meta name="author" content="Matthew Hulme"  />
+	<title>COS10024 Assignment 2</title>
+	<link href="css/desktop.css" rel="stylesheet" type="text/css"/>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/order.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<header>
+		<h1>COS10024 Assignment 2<br/>
+		103112063 Matthew Hulme</h1>
+		<hr/>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="order.html"><strong>Order</strong></a>
+			<a href="register.html">Register</a>
+			<a href="features.html">Features</a>
+			<!--
+			<a href=""></a>
+			-->
+		</nav>
+		<hr/>
+	</header>
+	<main>
+		<h3>Online Orders</h3>
+		<form id="ordform" method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+			<fieldset>
+				<legend>Order Type</legend>
+				<div class="blockme">
+					<input id="pickup" type="radio" name="ordtype" value="pickup" checked/>
+					<label for="pickup">Pickup</label>
+				</div>
+				<div class="blockme">
+					<input id="delivery" type="radio" name="ordtype" value="delivery"/>
+					<label for="delivery">Delivery</label>
+				</div>
+				<div class="blockme">
+					<label for="phone">Phone Number</label>
+					<input id="phone" type="text" name="phone"/>
+				</div>
+				<div id="addresscontainer" class="blockme address">
+					<label for="address">Delivery Address</label>
+					<input id="address" type="text" name="address" style="width: 50%;"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Customer Information</legend>
+				<div class="blockme">
+					<label for="uname">Name</label>
+					<input id="uname" type="text" name="uname"/>
+				</div>
+				<div class="blockme" id="billaddrtickcontainer">
+					<input id="billaddrtick" type="checkbox" name="billaddrtick" value="billaddrtick"/>
+					<label for="billaddrtick">Billing address matches delivery address</label>
+				</div>
+				<div class="blockme" id="billaddrcontainer">
+					<label for="billaddr">Billing Address</label>
+					<input id="billaddr" type="text" name="billaddr" style="width: 50%;"/>
+				</div>
+				<div class="blockme" id="cardcontainer">
+					<input id="visa" type="radio" name="cardtype" value="visa" checked/>
+					<label for="visa">Visa</label>
+					<input id="mastercard" type="radio" name="cardtype" value="mastercard"/>
+					<label for="mastercard">MasterCard</label>
+					<input id="amex" type="radio" name="cardtype" value="amex"/>
+					<label for="amex">American Express</label>
+				</div>
+				<div class="blockme" id="cardnocontainer">
+					<label for="cardno">Card Number</label>
+					<input id="cardno" type="text" name="cardno" maxlength="16" style="width: 9em;"/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Order</legend>
+				<div class="blockme">
+					<input id="margherita" type="checkbox" name="margherita" value="margherita"/>
+					<label for="margherita">Margherita</label>
+				</div>
+				<div class="blockme">
+					<input id="margregret" type="checkbox" name="margregret" value="margregret"/>
+					<label for="margregret">Margherita but you regret it tomorrow</label>
+				</div>
+				<div class="blockme">
+					<input id="hawnopin" type="checkbox" name="hawnopin" value="hawnopin"/>
+					<label for="hawnopin">Hawaiian without pinapple</label>
+				</div>
+				<div class="blockme">
+					<input id="hamcheese" type="checkbox" name="hamcheese" value="hamcheese"/>
+					<label for="hamcheese">Ham and Cheese</label>
+				</div>
+				<div class="blockme">
+					<input id="other" type="checkbox" name="other" value="other"/>
+					<label for="other">Other (describe below)</label>
+				</div>
+				<br/>
+				<label for="ordertext">Order Notes</label>
+				<br/>
+				<input id="ordertext" type="text" name="ordertext" style="width: 50%; height: 4em;"/>
+			</fieldset>
+			<div class="buttoninput">
+				<input type="submit" value="Order" />
+				<input type="reset" value="Reset" />
+			</div>
+		</form>
+	</main>
+	<footer>
+		<br/>
+		<hr/>
+		<br/>
+		<em>Created for COS10024 Assignment 2 by Matthew Hulme in 2021.</em>
+	</footer>
+</body>

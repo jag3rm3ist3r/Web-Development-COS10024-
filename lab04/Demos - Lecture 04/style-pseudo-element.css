@@ -1,0 +1,9 @@
+aside {
+	float:right;
+	
+	font-size:8px;
+	font-style:italic;
+	color:green;
+	width:35%;
+	padding-left:5px;
+}

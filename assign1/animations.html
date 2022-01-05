@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Demonstrates some HTML and CSS" />
+	<meta name="author" content="Matthew Hulme"  />
+	<title>COS10024 Assignment 1</title>
+
+	<!-- Stylesheet (This is only tested on my iPhone X) -->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<link href="styles/style.css" rel="stylesheet" type="text/css" media="screen and (min-device-width:641px)"/>
+	<link href="styles/mobilestyle.css" rel="stylesheet" type="text/css" media="only screen and (max-device-width: 640px)"/>
+
+
+	<!-- Adding a font to the site -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!--
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	-->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<header>
+		<h1>COS10024 Assignment 1<br/>
+		103112063 Matthew Hulme</h1>
+		<hr/>
+		<nav>
+			<a href="index.html">University</a>
+			<a href="hometown.html">Hometown</a>
+			<a href="about.html">About me</a>
+			<a href="animations.html"><strong>Animations</strong></a>
+			<!--
+			<a href=""></a>
+			-->
+		</nav>
+		<hr/>
+	</header>
+	<main>
+		<h3 id="anim1">Animations</h3>
+		<!--<div id="anim1"></div>-->
+		<article>
+			<section>
+				If the CSS animations aren't working on Firefox, try Chrome.
+					<ol>
+						<li>The title of this page has a CSS animation.</li>
+						<li>When you hover over the nav menu links they will fade to white.</li>
+						<li>The image of me on the page <a href="about.html">about.html</a> will fade in when the page loads.</li>
+					</ol>
+				</section>
+			</article>
+			<br/>
+			<div style="padding-top: 0.2em; padding-bottom: 0.2em;">Do you think it makes sense to put a form on this page?</div>
+			<form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+				<input type="radio" name="useless" checked="checked"> No</input><br/>
+				<input type="radio" name="useless"> No</input><br/>
+				<div style="padding-top: 0.5em"><input type="submit" value="Submit"></div>
+			</form>
+	</main>
+	<footer>
+		<br/>
+		<hr/>
+		<br/>
+		<em>Created for COS10024 Assignment 1 by Matthew Hulme in 2020.</em>
+	</footer>
+</body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Programming your own Wireless Information Service</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Web Development" />
+	<meta name="keywords"    content="HTML week 4 activity 1" />
+	<meta name="author"      content="Matthew Hulme" />
+</head>
+<body>
+	<form
+		id="survey"
+		method="post"
+		action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"
+	>
+	<!-- Job reference number, 5 characters -->
+	<p><label for="jobref">Job Reference No. <input type="text" name="jobref" maxlength="5" required></input></label></p>
+	<!-- First name, 20 characters -->
+	<p><label for="firstname">First Name <input type="text" name="firstname" maxlength="20" required></input></label></p>
+	<!-- Last name, 20 characters -->
+	<p><label for="lastname">Last Name <input type="text" name="lastname" maxlength="20" required></input></label></p>
+	<!-- Date -->
+	<p><label for="date">Date <input type="date" name="date" required></input></label></p>
+	<!-- Gender, radio buttons -->
+	<p><fieldset>
+		<legend>Gender </legend>
+		<label for="male">M <input type="radio" name="gender" value="male" default required></input></label>
+		<label for="female">F <input type="radio" name="gender" value="female" required></input></label>
+	</fieldset></p>
+	<!-- Street address, 40 characters -->
+	<p><label for="address">Street Address <input type="text" name="address" maxlength="40" required></input></label></p>
+	<!-- Town, 40 characters -->
+	<p><label for="town">Town <input type="text" name="town" maxlength="40" required></input></label></p>
+	<!-- Dropdown menu for state -->
+	<p><label for="state">State </label>
+	<select name="state">
+		<option value="vic">Victoria</option>
+		<option value="nsw">New South Wales</option>
+		<option value="qld">Queensland</option>
+		<option value="sa">South Australia</option>
+		<option value="tas">Tasmania</option>
+		<option value="wa">Western Australia</option>
+		<option value="act">Australian Capital Territory</option>
+		<option value="nt">Northern Territory</option>
+	</select></p>
+	<!-- Postcode, exactly 4 digits -->
+	<p><label for="postcode">Postcode <input type="text" name="postcode" pattern="[0-9]*" maxlength="4" required></input></label></p>
+	<!-- eMail, validate format -->
+	<p><label for="email">eMail <input type="email" name="email" pattern=".+@.+.com" required></input></label></p>
+	<!-- Phone number, 8-12 digits or spaces -->
+	<p><label for="mobile">Mobile <input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" required></input></label></p>
+	<!-- Skill list, checkboxes -->
+	<fieldset>
+		<legend>Skills </legend>
+		<p><label for="html">HTML <input type="checkbox" name="html"></input></label></p>
+		<p><label for="xml">XML <input type="checkbox" name="xml"></input></label></p>
+		<p><label for="vim">Vim <input type="checkbox" name="vim"></input></label></p>
+		<p><label for="other">Other skills <input type="checkbox" name="skill"></input></label></p>
+	</fieldset>
+	<!-- Other skills, text area -->
+	<p><label for="otherskills">Other skills <input type="text" name="otherskills"></input></label></p>
+
+	<!-- Submit and reset buttons -->
+	<p><input type="submit" value="Submit"/><input type="reset" value="Reset"/></p>
+	</form>
+</body>
+</html>
+

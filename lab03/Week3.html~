@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Web development"/>
+	<meta name="keywords" content="HTML (Part 1 - Content - Form)"/>
+	<meta name="author" content="Matthew Hulme"/>
+	<title>Web Development Survey</title>
+</head>
+
+
+<body>
+	<h1>Survey</h1>
+	<form action="page1.html">
+		<input type="submit" value="Start"/>
+	</form>
+</body>
+
+
+</html>

@@ -1,0 +1,39 @@
+#banner {
+	background:yellow;
+}
+
+#main_content {
+	color:white;
+}
+
+#main_content_part_1 {
+	background:green;
+	height:300px;
+	color:white;
+	width:33.3%;
+	float:left;
+}
+
+#main_content_part_2 {
+	background:purple;
+	height:300px;
+	width:33.3%;
+	float:left;
+}
+
+#main_content_part_3 {
+	background:brown;
+	height:300px;
+	width:33.3%;
+	float:left;
+}
+
+#footer {
+	background:black;
+	float:left;
+	width:100%;
+	color:white;
+}
+
+
+

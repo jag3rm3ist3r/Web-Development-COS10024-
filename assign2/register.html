@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Demonstrates some HTML and CSS" />
+	<meta name="author" content="Matthew Hulme"/>
+	<title>COS10024 Assignment 2</title>
+	<link href="css/desktop.css" rel="stylesheet" type="text/css"/>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="js/register.js" type="text/javascript"></script>
+</head>
+
+
+<body>
+	<header>
+		<h1>COS10024 Assignment 2<br/>
+		103112063 Matthew Hulme</h1>
+		<hr/>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="order.html">Order</a>
+			<a href="register.html"><strong>Register</strong></a>
+			<a href="features.html">Features</a>
+			<!--
+			<a href=""></a>
+			-->
+		</nav>
+		<hr/>
+	</header>
+	<main><div class="scrnOverlay">
+		<h3>Register</h3>
+		<form id="regform" method="post"
+					action="http://mercury.swin.edu.au/it000000/cos10005/formtest.php">
+			<fieldset>
+				<legend>Account Information</legend>
+
+				<div class="blockme">
+					<label for="uid">Username</label>
+					<input id="uid" type="text" name="uid"/>
+				</div>
+
+				<div class="blockme">
+					<label for="email">eMail</label>
+					<input id="email" type="text" name="email"/>
+				</div>
+
+				<div class="blockme">
+					<label for="pwd1">Password</label>
+					<input id="pwd1" type="password" name="pwd1"/>
+				</div>
+
+				<div class="blockme">
+					<label for="pwd2">Retype Password</label>
+					<input id="pwd2" type="password" name="pwd2"/>
+				</div>
+
+				<div class="blockme">
+					<input id="promo" type="checkbox" name="promo"/>
+					<label id="promo">Opt into promotional emails?</label>
+				</div>
+				<!--
+				<div class="blockme"></div>
+				-->
+			</fieldset>
+			<fieldset>
+				<legend>User Information</legend>
+
+				<div class="blockme">
+					<label for="uname">Name</label>
+					<input id="uname" type="text" name="uname"/>
+				</div>
+				<fieldset>
+					<legend>Favourite Pizza</legend>
+					<div class="blockme">
+						<input id="margherita" type="radio" name="favourite" value="margherita"/>
+						<label for="margherita">Margherita</label>
+					</div>
+					<div class="blockme">
+						<input id="margregret" type="radio" name="favourite" value="margregret"/>
+						<label for="margregret">Margherita but you regret it tomorrow</label>
+					</div>
+					<div class="blockme">
+						<input id="hawnopin" type="radio" name="favourite" value="hawnopin"/>
+						<label for="hawnopin">Hawaiian without pinapple</label>
+					</div>
+					<div class="blockme">
+						<input id="hamcheese" type="radio" name="favourite" value="hamcheese"/>
+						<label for="hamcheese">Ham and Cheese</label>
+					</div>
+				</fieldset>
+			</fieldset>
+			<div class="buttoninput">
+				<input type="submit" value="Register"/>
+				<input type="reset" value="Reset"/>
+			</div>
+		</form>
+	</div></main>
+	<footer>
+		<br/>
+		<hr/>
+		<br/>
+		<em>Created for COS10024 Assignment 2 by Matthew Hulme in 2021.</em>
+	</footer>
+</body>
